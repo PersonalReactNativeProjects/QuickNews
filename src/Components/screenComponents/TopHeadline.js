@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View} from 'react-native'; 
-import { Icon, Button, Container, Header, Left, Body, Title, Tab, Tabs, ScrollableTab,Content } from 'native-base'; 
+import { Icon, Button, Container, Header, Left, Body, Title, Tab, Tabs, ScrollableTab, Right, Input } from 'native-base'; 
 import Colors from '../../../constant/Colors'
 import { BusinessNewsTabComponent, EntertainmentNewsTabComponent, GeneralNewsTabComponent, HealthNewsTabComponent, ScienceNewsTabComponent, SportsNewsTabComponent, TechnologyNewsTabComponent,  } from '../../Components/tabNewsComponent';
     
@@ -45,10 +45,10 @@ class TopHeadline extends React.Component {
     render(){
         return (
             <Container style={{backgroundColor: Colors.primaryFade}}>
-                <Header style={{ backgroundColor: Colors.primary, borderBottomColor: Colors.primary, }} iosBarStyle="light-content" androidStatusBarColor='rgba(50,10,40,.7)'hasTabs transparent>
+                <Header hasTabs style={{ backgroundColor: Colors.primary, borderBottomColor: Colors.primary, }} iosBarStyle="light-content" androidStatusBarColor={Colors.primaryFade} transparent>
                     <Left>
-                        <Button transparent>
-                            <Icon ios='ios-menu' android="md-menu" style={{ fontSize: 30, color: Colors.accent, }}onPress={() => this.props.navigation.openDrawer()}/>
+                        <Button transparent onPress={() => this.props.navigation.openDrawer()} style={{ marginRight: 0 }}>
+                            <Icon ios='ios-menu' android="md-menu" style={{ fontSize: 30, color: Colors.accent, }} onPress={() => this.props.navigation.openDrawer()}/>
                         </Button>
                     </Left>
                     <Body>

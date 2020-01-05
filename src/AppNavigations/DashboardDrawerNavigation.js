@@ -26,7 +26,7 @@ const DashboardDrawerNavigation = createDrawerNavigator({
         activeBackgroundColor: 'rgba(55,55,55,.5)'
     },
     statusBarAnimation: 'slide',
-    drawerWidth: '60%',
+    drawerWidth: '80%',
     edgeWidth: 10,
     contentComponent: CustomDrawerContent,
     initialRouteName: 'Headline',

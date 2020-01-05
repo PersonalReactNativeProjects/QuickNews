@@ -1,5 +1,5 @@
 import { createSwitchNavigator, createAppContainer } from 'react-navigation'
-import LoadingScreen from './src/Screens/LoadingScreen';
+import SplashScreen from './src/Screens/SplashScreen';
 import DashboardDrawerNavigation from './src/AppNavigations/DashboardDrawerNavigation';
 
 
@@ -7,7 +7,7 @@ import DashboardDrawerNavigation from './src/AppNavigations/DashboardDrawerNavig
 //This Root navigator houses the loading screen and the dashboard drawer navigation/screen
 
 const RootSwitchNavigator = createSwitchNavigator({
-  Loading: { screen: LoadingScreen },
+  Splash: { screen: SplashScreen },
   Dashboard: { screen: DashboardDrawerNavigation }
 })  
 

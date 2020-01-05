@@ -6,7 +6,7 @@ import Colors from '../../../constant/Colors'
 
 
 
-class Loading extends React.Component {
+class Splash extends React.Component {
 
 
     constructor(props) {
@@ -65,4 +65,4 @@ const styles = StyleSheet.create({
 });
 
     
-export default Loading;
+export default Splash;

@@ -45,7 +45,7 @@ export default class CustomDrawerContent extends Component {
                     style={{
                         width: '100%',
                         height: 5,
-                        backgroundColor: '#851b19',
+                        backgroundColor: '#101D42',
                         //marginTop: 15,
                     }}
                 />
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     sideMenuContainer: {
         width: '100%',
         height: '100%',
-        backgroundColor: 'whitesmoke',
+        backgroundColor: '#e2e2e2',
         //paddingTop: 20,
     },
     sideMenuProfileIcon: {
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     },
     Header:{
         height: '12%',
-        backgroundColor: '#320a28',
+        backgroundColor: Colors.primary,
         alignItems: 'center',
 
     }

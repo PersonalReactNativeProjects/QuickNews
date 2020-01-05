@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import Loading from '../Components/screenComponents/Loading';
+import Splash from '../Components/screenComponents/Splash';
 
 
 
 
-class LoadingScreen extends Component {
+class SplashScreen extends Component {
 
     componentDidMount() {
         this.navigateToDashboardScreenHandler()
@@ -20,7 +20,7 @@ class LoadingScreen extends Component {
 
     render() {
         return (
-            <Loading />
+            <Splash />
         )
     }
 };
@@ -34,4 +34,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default LoadingScreen;
+export default SplashScreen;
